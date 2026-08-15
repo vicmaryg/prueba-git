@@ -1,1 +1,6 @@
-console.log("Proyecto listo para practicar Git");
+const boton = document.getElementById('btn');
+
+boton.addEventListener('click', () => {
+  const colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = colorAleatorio;
+});
